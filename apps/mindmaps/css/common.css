@@ -1,0 +1,28 @@
+#mmap{position:absolute;left:0;right:0;top:0;bottom:0;width:100%}
+
+/*
+  UTIL
+*/
+.no-select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.right {
+  float: right;
+}
+
+.loading {
+  min-width: 16px;
+  min-height: 16px;
+  background-image: url("../img/ajax-loader.gif");
+  background-repeat: no-repeat;
+}

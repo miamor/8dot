@@ -1,0 +1,25 @@
+Program Bai2;
+Uses crt;
+Var
+	tep: TEXT;
+	A: array[1 .. 100] of integer;
+	S, i, n:integer;
+Begin
+	Clrscr;
+	ASSIGN(tep, 'C:\DULIEU.TXT'); // define 'tep' name to open
+	RESET(tep); // open the file
+	
+	S:=0; // Set S start value
+	
+	While not(eof(tep)) do
+		Begin
+			Readln(tep, A[i]);
+			Write(A[i]:5);
+			S:=S+A[i]; // Addition A[i] to S
+		End;
+	
+	Writeln; // Print the integers array
+	Writeln('Sum: ', S); // Print the sum
+	Close(tep);
+	Readln;
+End.

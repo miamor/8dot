@@ -1,0 +1,2528 @@
+* { margin: 0; padding: 0; }
+
+html{height:100%;font-size: 100%;}
+body {font-family: Trebuchet MS,"Lucida Grande",Verdana,Helvetica,Arial,sans-serif;background-color:#fff;font-size:12pt;min-width:750px;background:url(http://illiweb.com/bl/background_html.png) repeat-x;}
+
+* html .conteneur_minwidth_IE { /* Hack IE min-width pour IE */
+	padding-left: 750px; /* valeur largeur mini pour IE */
+}
+
+* html .conteneur_container_IE { /* complï¿½ment ï¿½ .minwidth pour IE */
+	margin-left: -750px; /* nï¿½gatif valeur largeur mini pour IE */
+	position: relative;
+}
+
+* html .conteneur_minwidth_IE, * html .conteneur_container_IE, * html .conteneur_layout_IE { /* complï¿½ment ï¿½ .minwidth pour IE */
+	height: 1px;
+}
+
+a img{border: none;}
+
+img{border: 0;}
+
+img { behavior: url(iepngfix.htc); }
+
+h1{font-weight:700;font-size: 1.5em;color: #333;}
+
+
+.likeh2 {
+	font-size: 1.8em;
+	margin: 0px 0px 5px 15px;
+	color: #00a5cd;
+	padding: 10px 0 0 30px;
+	height: 40px;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 0px 0px 5px 15px;
+	color: #00a5cd;
+	padding: 10px 0 0 30px;
+	background: url(http://illiweb.com/fa/admin/puce.png) no-repeat;
+	height: 40px;
+}
+h2 a{color: #00a5cd !important;}
+h2 a:hover{color:#6ca226 !important;text-decoration:none;border-bottom:1px solid #6ca226;}
+
+ul.h2-breadcrumb {
+	margin: -14px 15px 20px 34px;
+	list-style: none;
+}
+	ul.h2-breadcrumb li {
+		float: left;
+		padding: 3px 0 0 45px;
+		background: url(http://illiweb.com/fa/admin/h2-breadcrumb-arrow.png) no-repeat 0% 75%;
+		font-size: 1.4em;
+		color: #00a5cd;
+		font-weight: bold;
+	}
+
+	ul.h2-breadcrumb li.first {
+		background: url(http://illiweb.com/fa/admin/h2-breadcrumb-arrow90.png) no-repeat 0% 110%;
+	}
+
+	ul.h2-breadcrumb li a {
+		color: #00a5cd;
+	}
+
+	ul.h2-breadcrumb li a:hover {
+		color: #6ca226;
+		text-decoration: none;
+		border-bottom: 1px solid #6ca226;
+	}
+
+
+caption {
+	font-size: 1.6em;
+	margin: 0 0 5px 15px;
+	color: #00a5cd;
+	padding: 10px 0 0 30px;
+}
+
+p{font-size: 1.1em;}
+
+blockquote.block_left{color:#4f4f4f;min-height:20px;margin-bottom:30px;background:url(http://illiweb.com/bl/quote.gif) left top no-repeat;padding: 10px 0 0 20px !important;}
+
+p.explain{padding:10px 0 10px 20px !important;min-height:20px;background:url(http://illiweb.com/fa/admin/icones/quote_end.gif) right bottom no-repeat;}
+* html p.explain{height: 56px;}
+
+ul{list-style:disc;margin-left:2em;margin-bottom:1em;}
+hr{border: 0 none;
+	border-top: 1px solid #999999;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	height: 1px;
+}
+
+.small{font-size: 1em;}
+
+/* General links */
+a:link, a:active, a:visited {
+	color: #007e9b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cc4400;
+	text-decoration: underline;
+}
+a.new_window, span.new_window {
+	background:transparent url(http://illiweb.com/fa/admin/new_window.gif) no-repeat;
+}
+
+/* Main blocks
+---------------------------------------- */
+#wrap {
+
+}
+
+#page-header {
+	height: 100px;
+	text-align: right;
+	background: url(http://illiweb.com/fa/admin/header.png) repeat-x;
+}
+*html #page-header {
+	height: 113px;
+}
+
+	#page-header img {
+		float: left;
+		padding: 2px;
+	}
+	*html #page-header img {
+		padding-top: 9px;
+		padding-right: 10px;
+	}
+
+	#page-header p {
+		font-size: 1.1em;
+	}
+
+	#page-header a {
+		color:#666666;
+	}
+
+	#page-header a:hover {
+		color:#007e9b;
+	}
+
+	a.url {
+ 		margin: 15px 0px 0px 20px;
+ 		font-size: 2em;
+ 		float: left;
+ 		text-decoration: none;
+ 	}
+
+ 	p#user_connected {
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	p#user_connected a:hover {
+		text-decoration: none;
+	}
+
+	#page-header ul.preview_forum {
+		list-style-type: none;
+		margin: 6px 5px 0 60px ;
+		position: absolute;
+		left: 0;
+		top: 68px;
+	}
+
+	#page-header ul.font-size {
+		list-style-type: none;
+		margin: 6px 5px 0 5px ;
+		position: absolute;
+		right: 0;
+		top: 68px;
+	}
+
+	#page-header ul.preview_forum li {
+		display: inline;
+		margin-left: 20px;
+	}
+
+	#page-header ul.preview_forum li a{
+		color: #FFFFFF;
+		font-size: 0.75em;
+		font-weight: bold;
+	}
+
+	#page-header ul.preview_forum li a:hover {
+		color: #b8e6f1;
+		text-decoration: none;
+	}
+
+	#page-header .preview_forum li img {
+		float: none;
+		vertical-align: middle;
+	}
+	* html #page-header .preview_forum li img {
+		margin-top: -5px;
+	}
+
+	#page-header #change-font-size {
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	#page-header #change-font-size img {
+		float: none;
+		vertical-align: middle;
+	}
+
+#page-body {
+	padding: 15px 0px 0px 0px;
+}
+* html #page-body {
+	margin-top: -14px;
+}
+
+#page-footer {
+	clear: both;
+	font-size: 1em;
+	text-align: center;
+}
+#content {
+	padding: 10px 0px 10px 0px;
+	font-size: 0.8em;
+	margin: 4px 15px;
+	background-color: #fff;
+	border: 3px solid #CDCDCD;
+}
+
+#content h1 {
+	line-height: 1.2em;
+	margin-bottom: 0px;
+}
+
+#main {
+	width: 72%;
+	padding:0;
+	padding-bottom: 10px;
+}
+
+#main.expended_main {
+	width: 95%;
+}
+
+#main {
+	margin: 20px 0px 0px 0px;
+	padding-left: 0px;
+	float: left;
+}
+* html #main {
+	height: 350px;
+}
+
+#main-content {
+	margin-left: 15px;
+}
+
+#tools {
+	padding: 25px 0 0 0;
+ color: #666666;
+ position: relative;
+ margin: 0px 0px 0px 10px;
+	float: left;
+	width: 25%;
+}
+
+#tools fieldset {
+	margin: 15px 0px 0px 0px;
+}
+
+#tools ul.img_puce {
+	list-style-image: url(http://illiweb.com/fa/admin/icones/puce_fleche.png);
+}
+
+/* Tabbed menu
+ Based on: http://www.alistapart.com/articles/slidingdoors2/
+----------------------------------------*/
+#tabs {
+	margin: 0px 15px -7px 15px;
+}
+
+	#tabs ul {
+		margin:0;
+		list-style: none;
+	}
+
+	*+ html #tabs ul {margin: 0 15px;}
+
+	#tabs li {
+		display: inline;
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	#tabs a {
+		background:url(http://illiweb.com/fa/admin/icones/menu/tab_left.gif) no-repeat 0% -52px;
+		padding-left:6px;
+		text-decoration: none;
+		position: relative;
+	}
+
+	#tabs a span {
+		display: block;
+		background: url(http://illiweb.com/fa/admin/icones/menu/tab_right.gif) no-repeat 100% -51px;
+		padding: 7px 12px 6px 6px;
+		color: #7cba2c;
+		white-space: nowrap;
+		vertical-align:bottom ;
+	}
+
+	#tabs a, #tabs a span {
+		float: left;
+	}
+
+	/* Commented Backslash Hack hides rule from IE5-Mac \*/
+	#tabs a span { float:none; }
+	/* End hack */
+
+	#tabs a:hover span {
+		color: #00a5cd;
+	}
+
+	#tabs #activetab a {
+		background-position: 0 0px;
+	}
+
+	#tabs #activetab a span {
+		background: url(http://illiweb.com/fa/admin/icones/menu/tab_right_active.gif) no-repeat 100% 0;
+		padding-bottom: 6px;
+		padding-right:20px;
+		color:#706262;
+	}
+
+	#tabs #activetab a:hover span {
+		color: #00a5cd;
+	}
+
+/* Main Panel
+---------------------------------------- */
+.panel {
+	margin: 4px 15px;
+	background-color: #fff;
+	border: 3px solid #CDCDCD;
+}
+
+
+/* Sub-navigation Menu
+---------------------------------------- */
+#menu {
+	width: 20%;
+	margin: 0px 10px 20px 5px;
+	background-color: #ffffff;
+	float: left;
+}
+
+	#menu p {
+		font-size: 1em;
+	}
+
+	#menu #hide-menu {
+		text-align:right;
+		margin-top:5px;
+		display:none;
+	}
+
+	#menu .submenu {
+		font-size: 0.9em;
+		border-bottom: 1px solid #ececec;
+	}
+
+	#menu .submenu a, #menu #activesubmenu a {
+		display: block;
+	}
+
+	#menu #activesubmenu {
+		border-bottom: 1px solid #ececec;
+	}
+
+	#menu .submenu a span {
+		text-decoration: none;
+		font-weight: bold;/*normal*/
+		color: #777;/*#999999*/
+		background-color: #FFFFFF;
+		background-image: none;
+		margin-left: 30px;
+	}
+
+	#menu #activesubmenu a {
+		text-decoration: none;
+		font-weight: normal;
+		color: #7cba2c;
+		background: #FFFFFF url(http://illiweb.com/fa/admin/icones/type_subli.png) no-repeat 10px 3px;
+		padding-left: 30px;
+		font-size: 0.9em;
+	}
+
+	#menu #activesubmenu a:hover, #menu .submenu a:hover, #menu .submenu a:hover span {
+		text-decoration: none;
+		color: #FFFFFF;
+		background-color:#00a5cd;
+	}
+	*+html #menu #activesubmenu a:hover span {
+		height: 1%;
+	}
+
+	.coins-top {
+		width: 100%;
+		float: left;
+		background: #ececec;
+	}
+
+	.coins-bottom {
+		background: #ffffff;
+		border-bottom: 3px solid #ececec;
+		height: 9px !important;
+		width: 100%;
+		float: left;
+	}
+	* html .coins-bottom {
+		background: #ffffff;
+		border: 0px solid #ffffff;
+		background: #ffffff url(http://illiweb.com/fa/admin/icones/border-bottom.png) repeat-x;
+	}
+
+	.coins-border {
+		border-left: 3px solid #ececec;
+		border-right: 3px solid #ececec;
+	}
+
+	.header {
+		color: #00a5cd;
+		text-align: right;
+		font-size: 1.4em;
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+
+	.left-top{
+		float: left;
+		background: #ececec url(http://illiweb.com/fa/admin/icones/top-left-gris.png) left top no-repeat;
+		color: #86b125;
+		font-size: 1.2em;
+		font-weight: bold;
+		border-top: 0px;
+		height: 26px;
+		padding: 0px 0px 0px 3px;
+	}
+
+	.left-bottom{
+		float: left;
+		background: #ffffff url(http://illiweb.com/fa/admin/icones/bottom-left-blanc.png) no-repeat scroll top left ;
+		color: #86b125;
+		height: 13px;
+		width: 10px;
+		border-bottom: 0px solid #ffffff;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.right-top{
+		background: #ffffff url(http://illiweb.com/fa/admin/icones/top-right-gris.png) left no-repeat;
+		float: left;
+		width: 23px;
+		height: 29px;
+	}
+
+	.right-bottom{
+		background: #ffffff url(http://illiweb.com/fa/admin/icones/bottom-right-blanc.png) left no-repeat;
+		float: right;
+		width: 23px;
+		height: 23px;
+	}
+
+	#admin_version, #menu old_admin p {
+		font-weight : normal;
+		text-align: center;
+	}
+
+	#admin_version {
+		margin-top: 15px;
+		padding-bottom : 5px;
+	}
+
+	#admin_version p, #menu old_admin p {
+		text-align:left;
+		color: #cdcdcd;
+	}
+
+	#admin_version p.btn {
+		border: 2px solid #d7d7d7;
+		color: #00a5cd;
+		display: inline;
+	}
+
+	#admin_version p.btn a {
+		color: #86b125;
+		padding: 0px 10px;
+		text-decoration: none;
+	}
+
+	#admin_version p.btn a:hover {
+		background: #eeeeee;
+		text-decoration: none;
+	}
+
+	#admin_version p.btn span {
+		background: url(http://illiweb.com/fa/admin/icones/type_subli.png) no-repeat 5px 0px;
+		padding-left: 20px;
+		padding-right: 10px;
+		text-decoration: none;
+	}
+
+input.btn_send {
+background: url(http://illiweb.com/fa/admin/icones/polaroids_petit.png) no-repeat 2px 2px #ffffff;
+width: 180px;
+text-align: right;
+height: 30px;
+vertical-align: middle;
+padding: 5px;
+border: 1px solid #7cba2c;
+color: #666666;
+}
+
+input.btn_send:hover {
+background: url(http://illiweb.com/fa/admin/icones/polaroids_petit.png) no-repeat 2px 2px #eeeeee;
+cursor: pointer;
+}
+
+/* Table styles
+---------------------------------------- */
+table {
+	width: 100%;
+}
+
+table.grey {
+	background-color:#ececec;
+	border:1px solid #d5d5c8;
+	padding:0;
+	/*margin-left: 15px;*/
+	width: 100%;
+}
+
+th{
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+td {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+th {
+	padding: 4px 4px 4px 4px;
+	color: #ffffff;
+	font-weight: bold;
+	background: #89cc46;
+	background: #8fd534 url(http://illiweb.com/bl/table_th_first_left.png) no-repeat top left;
+}
+
+/* for IE <= 7 */
+*+html th, * html th {
+	padding: 0 4px;
+}
+
+th.nobg {
+	padding: 6px 4px;
+	color: #6f6f6f;
+	background-color: #efefef;
+	background-image: none;
+}
+th a:link, th a:active, th a:visited {
+	color: #EDFBD8;
+
+	text-decoration: none;
+}
+
+th a:hover {
+	color:#86B125;
+	text-decoration: underline;
+}
+td {
+	padding: 4px;
+	line-height: 1.2em;
+	color: #4f4f4f;
+}
+
+.row1 { background-color: #EFEFEF; }
+.row2 { background-color: transparent; }
+.row3 { background-color: #D1D7DC; }
+.row4 { background-color: #E4E8EB; }
+.rowimportant { background-color: #D63600; color:#EFEFEF}
+.col1 { background-color: #DEE3E7; }
+.col2 { background-color: #EFEFEF; }
+
+.mass_email_html table {
+	width:inherit;
+}
+
+/* Style for the colors page
+----------------------------------------*/
+table.admin_colors td {
+	font-size: 0.8em;
+	line-height: 1em;
+}
+
+#colorPickerDiv table {
+	height: auto;
+	width:auto;
+}
+
+#colorPickerDiv table td {
+	padding: 0;
+	margin: 0;
+}
+
+#colorPickerDiv table td a {
+	padding:0;
+	margin: 0;
+	width:auto;
+}
+/* General form styles
+----------------------------------------*/
+fieldset {
+	margin: 15px 0px 0px 15px;
+	padding: 10px 15px 10px 10px !important;
+	border: 1px solid #cdcdcd;
+	font-size: 0.9em;
+	position: relative;
+	background: #f7f7f7 url(http://illiweb.com/bl/spirale.png) no-repeat;
+}
+* html fieldset {
+	padding: 10px 10px 5px 10px;
+	margin: 30px 15px 30px 15px;
+}
+
+fieldset.html-editor {
+	position: static;
+}
+
+* html fieldset.html-editor {
+	position: relative; /* IE6 having a hard time calculating position */
+}
+
+*+ html fieldset.html-editor legend {
+	position: static;
+	margin-top: -15px;
+	display: inline;
+}
+
+* html fieldset.html-editor legend {
+	position: static;
+	margin-top: -15px;
+	display: inline;
+}
+
+fieldset p {
+	font-size: 1.1em;
+}
+
+legend {
+	padding: 1px 0;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #00a5cd;
+	line-height: 100%;
+	display: block;
+}
+
+* html legend {
+	position:absolute;
+	margin-bottom: 0px;
+	margin-left: -7px;
+	margin-top: 5px;
+	top: -1em;
+	padding: 0.5em 0.15em;
+}
+
+*+html legend {
+	position:absolute;
+	top:-0.5em;
+}
+
+table.like-fieldset {
+	background : #f7f7f7 url(http://illiweb.com/bl/spirale.png) no-repeat;
+	border: 1px solid #cdcdcd;
+	margin: 0px 0px 0px 15px;
+	padding: 10px 15px 10px 10px !important;
+	width: 97%;
+}
+
+table.like-fieldset .label {
+	width: 30%;
+}
+
+table.like-fieldset th {
+	background: transparent;
+	color: #00A5CD;
+	font-weight: bold;
+	font-size: 1.6em;
+	text-align: left;
+}
+
+table.group_allow_sig {
+	width: 350px;
+}
+
+
+table.group_allow_sig td {
+	text-align: center;
+}
+
+table.group_allow_sig select {
+	width: 140px;
+}
+
+input {
+	font-family: "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	background-color: #FAFAFA;
+	border-left: 4px solid #8fd534;
+	border-top: 1px solid #8fd534;
+	border-right: 1px solid #8fd534;
+	border-bottom: 1px solid #8fd534;
+	color: #333333;
+	padding: 2px;
+	vertical-align: middle;
+	padding-left: 4px;
+	/*overflow: visible;*//* One more IE Bug */
+}
+
+input.disabled{
+	background-color:#ddd;
+	cursor:pointer;
+}
+
+* html input {
+	overflow: hidden;
+}
+*+html input {
+	overflow: hidden;
+}
+
+select {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	cursor: default;
+	vertical-align: middle;
+	width:auto;
+	max-width:100%;/* Bug IE */
+	border-left: 4px solid #8fd534;
+	border-top: 1px solid #8fd534;
+	border-right: 1px solid #8fd534;
+	border-bottom: 1px solid #8fd534;
+	padding: 1px;
+	background-color: #FAFAFA;
+}
+select.jump_forum {
+/*	position:absolute;
+	z-index:0;*/
+}
+optgroup {
+	font-weight: bold;
+}
+
+option {
+	padding-right: 1em;
+}
+
+textarea {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	width: 99%;
+	padding: 2px;
+	background-color: #FAFAFA;
+	border-left: 4px solid #8fd534;
+	border-top: 1px solid #8fd534;
+	border-right: 1px solid #8fd534;
+	border-bottom: 1px solid #8fd534;
+	padding-left: 4px;
+	cursor: text;
+}
+
+label {
+	cursor:pointer;
+	font-size: 1em;
+	padding-right: 5px;
+}
+
+label input {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+label img {
+	vertical-align: middle;
+}
+
+fieldset.quick, p.quick {
+	margin: 0 0 5px 0;
+	padding: 5px 0 0 0;
+	border: none;
+	background-color: transparent;
+	text-align: right;
+	font-size: 1.1em;
+}
+
+fieldset.quick legend {
+	display: none;
+}
+
+fieldset.tabulated {
+	background-color: #DADFE4;
+}
+
+fieldset.nobg {
+	margin: 15px 0 0 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 1.1em;
+}
+
+fieldset.display-options {
+	margin: 15px 0 2px 0;
+	padding: 0 0 4px 0;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+fieldset.display-options select, fieldset.display-options input, fieldset.display-options label {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+select option.disabled {
+	background-color: #bbb;
+	color: #fff;
+}
+
+.big-table {
+	width: 99%;
+	overflow: auto;
+}
+
+.big-cell {
+	width: 400px;
+	overflow: auto;
+}
+
+*+ html .big-cell {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 17px 0;
+}
+
+* html .big-cell {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 17px 0;
+}
+
+/* Special case inputs */
+select#board_timezone,
+select#full_folder_action {
+	width: 95%;
+}
+
+.float {
+	float: left;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+/* Definition list layout for forms
+ Other general def. list properties defined in prosilver_main.css
+---------------------------------------- */
+dl {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+}
+dt {
+	color: #666666;
+	width: auto;
+}
+
+fieldset {
+	color: #666666;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-right: 12px;
+}
+
+/*@-moz-document url-prefix() {
+	fieldset {
+		display: table-column;
+	}
+}*/
+
+fieldset th {
+	font-size: 1em;
+}
+
+fieldset dt {
+	float: left;
+}
+
+dd { color: #4f4f4f; }
+dd + dd { padding-top: 5px; }
+dt span { padding-right: 5px; }
+
+dt .explain { font-style: italic; }
+
+
+dt label {
+	font-size: 100%;
+}
+
+dd label {
+	white-space: nowrap;
+	margin-right: 10px;
+}
+
+html>body dd label input { vertical-align: text-bottom; }	/* Tweak for Moz to align checkboxes/radio buttons nicely */
+
+/*
+dd input,
+dd select {
+	max-width: 100%;
+}
+*/
+
+dd textarea {
+	width: 78%; /* 99% */
+}
+
+input.radio, input.checkbox {
+	width: auto !important;
+	background-color: transparent;
+	border: none;
+	cursor: default;
+	padding: 0;
+}
+
+dd select{width:auto;font-size:100%;}
+dd span.info{font-style:italic;color:#888;}
+dt span.info{font-style:italic;color:#888;}
+
+fieldset dl {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+fieldset dt {
+	width: 30%;
+	padding-top: 5px;
+	border: none;
+}
+
+fieldset dd {
+	padding-left: 5px;
+	margin-left: 30%;
+	padding-top: 5px !important;
+	vertical-align: middle;
+}
+fieldset dd img{vertical-align:middle;}
+fieldset dd em{color:#888;}
+
+/*fieldset dd #basket_id
+{
+	max-width:98%;
+	width:98%;
+}*/
+
+/* Hover highlights for form rows */
+/* DEBUT SUPPRESSION David - Mantis #2800 - Scintillement sous OpÃ©ra en combination avec dl:after */
+/* fieldset dl:hover dt label{color:#666;} */
+/* FIN SUPPRESSION */
+
+input:focus,textarea:focus{color:#000;}
+
+*+ html .fieldset_left dl {
+	min-height: 1px;
+	clear: both;
+}
+
+/* Icones de liens
+---------------------------------------*/
+.link_cancel, a.link_cancel {
+	cursor:pointer;
+	padding-left: 5px;
+	color:#cc0000;
+}
+
+a.link_cancel img {
+	vertical-align: middle;
+}
+
+.link_refresh, a.link_refresh {
+	cursor: pointer;
+	color: #ff7733;
+	padding: 5px;
+	border: 1px solid #ff7733;
+	margin: 0px 0px 0px 20px !important;
+}
+* html a.link_refresh {
+	padding: 0px;
+}
+*+html a.link_refresh {
+	padding: 0px;
+}
+
+a.link_refresh:hover {
+	background-color: #eeeeee;
+	text-decoration: none;
+}
+
+a.link_refresh img {
+	vertical-align: middle;
+}
+*+html a.link_refresh img {
+	padding: 4px 0px 3px 0px;
+}
+* html a.link_refresh img {
+	padding: 4px 0px 3px 0px;
+}
+
+.link_add, a.link_add {
+	cursor: pointer;
+	color: #66CC00;
+	padding: 5px;
+	border: 1px solid #66CC00;
+	margin: 0px 0px 0px 20px !important;
+}
+* html a.link_add {
+	padding: 0px;
+}
+*+html a.link_add {
+	padding: 0px;
+}
+
+a.link_add:hover {
+	background-color: #eeeeee;
+	text-decoration: none;
+}
+
+a.link_add img {
+	vertical-align: middle;
+}
+*+html a.link_add img {
+	padding: 4px 0px 3px 0px;
+}
+* html a.link_add img {
+	padding: 4px 0px 3px 0px;
+}
+
+/* Submit buttons styles
+---------------------------------------- */
+.icon_add, .icon_edit, .icon_ok, .icon_cancel, .icon_refresh, .icon_search, .icon_edit_new {
+	padding:0 5px 0 16px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	direction:ltr;
+}
+
+/* icon ADD */
+.icon_add, a.icon_add {
+	background-image:url(http://illiweb.com/fa/admin/icones/ajouter.png);
+	color:#66CC00;
+	border: 1px solid #8FD534;
+	margin:5px 0px 1px 20px;
+}
+.icon_add:hover, a.icon_add:hover {
+	background: #eeeeee;
+	background-image:url(http://illiweb.com/fa/admin/icones/ajouter.png);
+	background-repeat:no-repeat;
+	text-decoration: none;
+}
+
+.icon_inactive {
+	color: #ccc !important;
+	border: 1px solid #ccc !important;
+	background-color: #ebebeb;
+}
+
+.icon_inactive:hover {
+	background-color: #ebebeb !important;
+	cursor: default !important;
+}
+
+
+.icon_ok.icon_inactive {
+	background-image: url(http://illiweb.com/fa/admin/icones/icon_ok_inactive.gif);
+}
+
+.icon_cancel.icon_inactive,
+.icon_cancel.icon_inactive:hover {
+	background-image: url(http://illiweb.com/fa/admin/icones/supprimer_inactive.png);
+}
+
+/* icon EDIT_NEW */
+.icon_edit_new, a.icon_edit_new {
+	background-image:url(http://illiweb.com/fa/admin/icones/editer.png);
+	color:#CA960C;
+	border: 1px solid #F0C25A;
+	margin:5px 0px 1px 20px;
+	padding:1px 5px 1px 20px;
+}
+.icon_edit_new:hover, a.icon_edit_new:hover {
+	background: #eeeeee;
+	background-image:url(http://illiweb.com/fa/admin/icones/editer.png);
+	background-repeat:no-repeat;
+	text-decoration: none;
+}
+
+.icon_edit, a.icon_edit {
+	color:#340640;
+}
+
+a.icon_edit img {
+	vertical-align: middle;
+}
+
+.icon_edit:hover {
+	color:#340640;
+	border-color:#340640;
+}
+
+.icon_ok, a.icon_ok {
+	background-image:url(http://illiweb.com/fa/admin/icon_ok.gif);
+	color: #6C0;
+	border: 1px solid #8FD534;
+	margin: 2px 0 2px 20px;
+}
+
+a.icon_ok strong {
+	font-weight: normal;
+}
+
+.icon_ok:hover, a.icon_ok:hover {
+	border-color:#66CC00;
+	background-color: #eeeeee;
+	/*background-image:url(http://illiweb.com/fa/admin/icon_ok.gif);
+	background-repeat:no-repeat;*/
+	text-decoration: none;
+}
+
+
+/* DEBUT AJOUT Damien 08/004/2010 */
+.icon_ok.warning{
+	background : #FAFAFA;
+	padding : 0 5px 0 5px;
+	color : #FF0000;
+	border : 1px solid #FF0000;
+}
+
+.icon_ok.warning:hover{
+	background : #eeeeee;
+}
+
+.icon_ok.warning.cadeau{
+	border : 1px solid #66CC00;
+	color  : #66CC00;
+}
+
+.icon_ok.warning.category{
+	border : 1px solid #008000;
+	color  : #008000;
+}
+
+/* FIN AJOUT Damien */
+
+.icon_cancel, a.icon_cancel {
+	background-image:url(http://illiweb.com/fa/admin/icones/supprimer.png);
+	color:#cc0000;
+	border:1px solid #cc0000;
+	margin: 2px 0px 1px 20px !important;
+}
+
+.icon_cancel:hover {
+	background:url(http://illiweb.com/fa/admin/icones/supprimer.png) no-repeat #eeeeee;
+	border-color:#cc0000;
+}
+
+.icon_refresh, a.icon_refresh {
+	background-image: url(http://illiweb.com/fa/admin/icon_sync.gif);
+	color:#ff7733;
+	border: 1px solid #ff7733;
+	margin: 0px 0px 0px 20px !important;
+}
+
+.icon_refresh:hover, a.icon_refresh:hover {
+	border-color:#ff7733;
+	color:#ff7733;
+	background: #eeeeee;
+	background-image:url(http://illiweb.com/fa/admin/icon_sync.gif);
+	background-repeat:no-repeat;
+	text-decoration: none;
+}
+.icon_search {
+	background-image:url(http://illiweb.com/fa/admin/icones/voir.png);
+	color:#6f6f6f;
+}
+.icon_search:hover {
+	border-color:#6f6f6f;
+}
+
+.icon_refresh_right, .icon_search_right {
+	padding-right:16px;
+	background-position: right !important;
+}
+
+
+
+/* Pagination
+---------------------------------------- */
+.pagination {
+	height: 1%; /* IE tweak (holly hack) */
+	width: auto;
+	text-align: right;
+	margin-top: 5px;
+	font-size: 1em;
+	padding-bottom: 2px;
+}
+
+.pagination strong,
+.pagination b {
+	font-weight: normal;
+}
+
+.pagination span strong {
+	padding: 0 2px;
+	margin: 0 2px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #069;
+	border: 1px solid #069;
+}
+
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
+	font-weight: normal;
+	text-decoration: none;
+	color: #5C758C;
+	margin: 0 2px;
+	padding: 0 2px;
+	background: #ECEDEE;
+	border: 1px solid #B4BAC0;
+}
+
+.pagination span a:hover {
+	border-color: #069;
+	background: #069;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.pagination img {
+	vertical-align: middle;
+}
+
+/* Action Highlighting
+---------------------------------------- */
+.success {
+	color: #282 !important;
+}
+
+.error {
+	color: #BC2A4D !important;
+}
+.message {
+	color:#ffa34f !important;
+}
+.successbox, .errorbox, .messagebox {
+	padding: 10px;
+	margin: 20px auto;
+	color: #1F5B13;
+	width:50%;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+.successbox {
+	color:#296f2c;
+}
+
+.errorbox {
+	color: #990000;
+}
+
+.messagebox {
+	color: #BFAF00;
+}
+
+.successbox h3, .errorbox h3, .messagebox h3 {
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 0.5em;
+	text-align: left;
+	padding: 5px 0px 1px 40px;
+	height: 25px;
+}
+
+.successbox h3 {
+	background: url(http://illiweb.com/bl/confirm.gif) no-repeat;
+}
+
+.errorbox h3 {
+	background: url(http://illiweb.com/bl/error.gif) no-repeat;
+}
+
+.messagebox h3 {
+	background: url(http://illiweb.com/bl/warning.gif) no-repeat;
+}
+
+.successbox p, .errorbox p, .messagebox p{
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+
+.successbox a, .errorbox a, .messagebox a {
+	color:#4f4f4f;
+	font-weight: bold;
+	text-decoration: none;
+}
+.successbox a:hover, .errorbox a:hover, .messagebox a:hover {
+	text-decoration: underline;
+}
+
+/* Special cases for the error page */
+#errorpage #page-header a {
+	font-weight: bold;
+	line-height: 6em;
+}
+
+#errorpage #content {
+	padding-top: 10px;
+}
+
+#errorpage #content h1 {
+	color: #DF075C;
+}
+
+#errorpage #content h2 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 5px;
+	color: #333333;
+}
+
+/* Tooltip for permission roles */
+#tooltip {
+	padding:0;
+	max-width: 50% !important;
+	color: #000;
+	border:1px solid #a0bbf7;
+	background-color: #f6f6f6;
+	font-size:0.8em;
+}
+
+* html #tooltip {
+	width: 30%;
+}
+
+#tooltip *
+{
+	margin:2px 5px 2px 8px;
+}
+#tooltip ul {
+	padding: 0px 0px 0px 20px;
+}
+#tooltip dl {
+	clear:both;
+	position:relative;
+	margin-bottom: 10px;
+}
+#tooltip dt {
+	float:left;
+	border: medium none;
+	padding-top: 3px;
+	width: 50%;
+}
+#tooltip dd {
+	margin-left: 50%;
+	padding-left: 5px;
+	vertical-align: top;
+}
+#tooltip p.header {
+	margin:0;
+	font-size:13px;
+	color:#ffffff;
+	padding: 1px 5px;
+	background: #a0bbf7 repeat;
+	font-weight: bold;
+	border:1px solid #a0bbf7;
+}
+
+#tooltip p {
+	padding: 0px 5px 0px 0px;
+	color: #666666;
+}
+
+/* Nice method for clearing floated blocks without having to insert any extra markup
+ From http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after, #tabs:after, .row:after, #content:after, fieldset dl:after, #page-body:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+*+ html .clearfix,
+*+ html fieldset dl {
+	min-height: 1px;
+}
+
+
+/* Hide from Mac IE, Windows IE uses this as it doesn't support the :after method above \*/
+* html .clearfix,
+* html #tabs,
+* html .row,
+* html #content,
+* html fieldset dl,
+* html #page-body {
+	height: 1%;
+}
+
+/* End hide */
+
+.redcheckbox {
+	border-color: #ff0000;
+}
+
+/* Grey Boxes
+---------------------------------------- */
+.greyboxes {
+	background-color:#efefef;
+	border:1px solid #d4d4bf;
+	padding-left:10px;
+}
+
+.greyboxes h2 {
+	margin:0 0 5px -10px;
+	padding:3px 10px 3px 10px;
+	text-transform: uppercase;
+	color:#fff;
+	background-color:#89cc46;
+	border-bottom:1px solid #ccc;
+}
+
+/* Icons more & less */
+.icon_more {
+	cursor:pointer;
+	background:transparent url(i/tabs_more.gif) no-repeat;
+	padding-left:15px;
+}
+.icon_less {
+	cursor:pointer;
+	background:transparent url(i/tabs_less.gif) no-repeat;
+	padding-left:15px;
+}
+
+.center {
+	text-align: center;
+}
+
+*html a.lk_icone {
+	border: 1px solid #ffffff;
+}
+
+*html a.lk_icone:hover {
+	color: #444444;
+	border: 1px solid #bbbbbb;
+	background: #eeeeee;
+	text-decoration: none;
+}
+
+.sim-adv {width:250px; margin: auto;}
+
+div.icone_center {
+	margin : 0px auto;
+	width: 500px;
+	min-width: 500px;
+	margin: 0 auto 1em;
+	padding: 0;
+}
+
+/* Icons list */
+div.icone_left,div.icone_right,div.icone_left_hover,div.icone_right_hover {
+	color: #999;
+	border: 1px solid #fff;
+	background: #fff;
+	text-align: center;
+	width: 120px;
+	padding: 10px;
+	margin: 10px;
+}
+
+div.icone_left,div.icone_left_hover {
+	float: left;
+}
+
+div.icone_right,div.icone_right_hover {
+	float: right;
+}
+
+/* First steps icons */
+div.icone_first_steps,div.icone_first_steps_hover {
+	width: 120px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	color: #999;
+	border: 1px solid transparent;
+	_border-color: #f7f7f7; /* IE6 */
+}
+
+/* Icons list with mouse over */
+div.icone_left_hover,div.icone_right_hover,div.icone_first_steps_hover {
+	color: #444;
+	border-color: #bbb;
+	background: #eee;
+}
+
+div.icone_left_hover a,div.icone_right_hover a,div.icone_first_steps_hover a {
+	text-decoration: none !important;
+}
+
+/* -- DEB AJOUT DAMIEN 22/04/2010 -- */
+td.ico_step{
+	width : 100px;
+}
+
+div.icone_first_steps.fb{
+	width  : 60px;
+	height : 63px;
+	padding : 6px 20px 6px 20px;
+	border  : none;
+}
+
+img.fb_install{
+	width  : 60px;
+	height : 63px;
+}
+/* -- FIN AJOUT DAMIEN -- */
+
+/* ****************************************
+TEMPORARY STYLING FOR CREDITS HOVER ICONS
+**************************************** */
+
+div.icone_center.credits {
+	display: table;
+	/*white-space: nowrap; Why ?*/
+	width: auto !important;
+}
+
+div.icone_center.credits div.icone_left,
+div.icone_center.credits div.icone_left_hover {
+	padding: 0;
+}
+
+div.icone_center.credits div.icone_left a,
+div.icone_center.credits div.icone_left_hover a {
+	display: block;
+	margin-top: 5px;
+}
+
+/* END TEMP STYLING */
+
+div.avatar {
+	float: left;
+	text-align: center;
+	width: 160px;
+	height: 230px;
+	color: #cccccc;
+	margin: 12px;
+	border: 1px solid #fff;
+	background: #fff;
+}
+
+ div.avatar div {
+ 	background: #b3e4f0;
+ }
+
+ div.avatar img {
+	padding: 5px;
+}
+
+div.news1, div.news2 {
+	padding: 5px 0 5px 10px;
+}
+
+div.news1 {
+	background: #fff;
+}
+
+div.news2 {
+	background: #eee;
+}
+
+.txt_blue {
+	color: #00a5cd;
+}
+
+.txt_blue:hover{
+	color: #f73;
+}
+
+.txt_orange {
+	color: #f73;
+	font-size:0.9em;
+}
+
+.txt_green {
+	color: #7cba2c;
+}
+
+a.txt_green {
+	color: #7cba2c;
+	text-decoration: none;
+}
+
+.txt_green a:hover {
+	color: #7cba2c;
+	text-decoration: none;
+}
+
+ .txt_grey {
+	color: #aaa;
+	font-size:0.7em;
+}
+
+/* DEBUT MODIF damien 08/04/2010  */
+fieldset.warning td, fieldset.warning_cadeau td, fieldset.warning_category td, fieldset.alert td{
+	padding : 0 4px 0 4px;
+}
+
+
+fieldset.warning {
+	background : #FFC;
+	border     : 1px solid #FF0000;
+}
+
+fieldset.warning_cadeau {
+	background : #CCFFCC;
+	border : 1px solid #99CC33;
+}
+
+fieldset.warning_category {
+	background : #FFC;
+	/*border : 1px solid #7cba2c;*/
+	border : 1px solid #008000;
+}
+
+fieldset.alert{
+	background : #FCC;
+	border     : 1px solid #FF0000;
+}
+
+/* FIN MODIF damien 08/04/2010 */
+
+.field_title {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #00a5cd;
+}
+
+.img_puce_right {
+	float: right;
+}
+
+.explain_left {
+	background: url(http://illiweb.com/bl/quote.gif) top left no-repeat;
+	color:#4f4f4f;
+	padding: 10px 0px 5px 20px;
+	min-height: 20px;
+}
+
+.explain_right {
+	background: url(http://illiweb.com/bl/quote.gif) top right no-repeat;
+	color:#4f4f4f;
+	padding: 10px 20px 5px 0px;
+	min-height: 20px;
+}
+
+div.btn_home_left, div.btn_home_right {
+ 	margin: 10px;
+	border: 2px solid #d7d7d7;
+	color: #00a5cd;
+	text-decoration: none;
+	float: left;
+}
+
+div.btn_home_left a, div.btn_home_left a:visited {
+	color: #86b125;
+	padding: 0px 10px;
+	text-decoration: none;
+}
+
+div.btn_home_right a, div.btn_home_right a:visited {
+	color: #86b125;
+	padding: 0px 10px;
+	text-decoration: none;
+}
+
+div.btn_home_left a:hover, div.btn_home_right a:hover {
+	background: #eeeeee;
+	color: #86b125;
+	text-decoration: none;
+}
+
+div.btn_home_left span {
+	background: url(http://illiweb.com/fa/admin/icones/type_subli.png) no-repeat 5px 0px;
+	padding-left: 20px;
+	padding-right: 10px;
+	text-decoration: none;
+}
+
+div.btn_home_right span {
+	background: url(http://illiweb.com/fa/admin/icones/type_subli.png) no-repeat right 0px;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+div.btn_home_left span:hover{
+	text-decoration: none;
+	cursor: auto;
+}
+
+div.btn_home_right span:hover {
+	text-decoration: none;
+	cursor: auto;
+}
+
+
+#page-body .bottom-help {
+	text-align: center;
+	margin-top: 60px;
+	clear: both;
+	position: relative;
+}
+
+	#page-body .bottom-help .help-link {
+		position: absolute;
+		right: 10px;
+		top: -50px;
+	}
+
+/* Classes used for forum auth
+-------------------------------------*/
+table td.checked-auth {
+	background-color: #E7FFEA;
+	border-top: 1px solid #BFFFC6;
+	border-bottom: 1px solid #BFFFC6;
+}
+
+.more-less-auth {
+	float: right;
+	margin-top: -65px;
+}
+* html .more-less-auth {
+	margin-top: -50px;
+}
+
+.fieldset_right .more-less-auth {
+	float: left;
+}
+
+/*	Popup for preview
+-------------------------------------*/
+#preview_block .preview {
+	background: url(http://illiweb.com/fa/admin/alpha.png);
+}
+
+#preview_block .preview img {
+	margin: 30px;
+	background: url(http://illiweb.com/fa/admin/wait_preview.gif) no-repeat 50% 50%;
+}
+
+/* Some general classes
+-------------------------------------*/
+.perso_domain_explain p {
+	padding: 15px 40px 15px 40px;
+}
+
+.perso_domain_explain ul {
+	padding: 15px 50px 15px 50px;
+}
+
+.btn_legend {
+	vertical-align: middle;
+	padding: 5px 0px 5px 15px;
+}
+
+.clear, .spacer {
+	clear: both;
+}
+
+.v-align-tb {
+	vertical-align: text-bottom;
+}
+
+.v-align-t {
+	vertical-align: top;
+}
+
+.field_table {
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+
+.div_btns {
+	width: 100%;
+	text-align: right;
+	padding: 0px 0px 5px 0px;
+}
+
+.DIV_BTNS {
+	width: 100%;
+	text-align: right;
+	padding: 0px 0px 5px 0px;
+}
+
+.block_portal_struct {
+	border: outset 2px #458BAA;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.block_portal_struct tr {
+	background: #F3F3F3;
+}
+
+.block_portal_struct th, .block_portal_struct th tr {
+	background: url(none) #397D9C;
+	padding: 0;
+}
+
+.block_portal_struct th td {
+	color: #FFFFFF;
+}
+
+.block_portal_struct a:link, .block_portal_struct a:visited, .block_portal_struct .personnal_mod {
+	color: #9DD381;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.block_portal_struct a:hover, .block_portal_struct .existing_mod:hover, .block_portal_struct .personnal_mod:hover {
+	color: #000000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.block_portal_struct_th {
+	border: outset 2px #458BAA;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background: url(none) #397D9C;
+	padding: 0;
+	color: #FFFFFF;
+}
+
+.block_portal_struct .existing_mod {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #C4C4C4;
+}
+
+.cursor_move {
+	cursor: move;
+}
+
+/*
+Sous-menu images, groupes, forums
+*/
+#tabs_menu {
+	margin: 0px 1px 0px 0px;
+}
+
+#tabs_menu ul {
+	list-style: none;
+}
+
+#tabs_menu li {
+	display: inline;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#tabs_menu a {
+	background:url(http://illiweb.com/fa/admin/icones/menu/sub_left1.png) no-repeat 0% 0px;
+	padding-left:6px;
+	text-decoration: none;
+	position: relative;
+	height: 32px;
+	cursor: hand;
+}
+#tabs_menu a span {
+	display: block;
+	background: url(http://illiweb.com/fa/admin/icones/menu/sub_right1.png) no-repeat 100% 0px;
+	padding: 7px 12px 6px 6px;
+	color: #706262;
+	white-space: nowrap;
+	vertical-align:bottom ;
+	height: 20px;
+}
+* html #tabs_menu a span {
+	display: block;
+	background: url(http://illiweb.com/fa/admin/icones/menu/sub_right1.png) no-repeat 100% 0px;
+	padding: 7px 12px 6px 6px;
+	color: #706262;
+	white-space: nowrap;
+	vertical-align:bottom ;
+	width: 50px;
+}
+
+#tabs_menu a, #tabs_menu a span {
+	float:left;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs_menu a span {
+	float:none;
+}
+/* End hack */
+
+#tabs_menu a:hover span {
+	color: #00a5cd;
+}
+
+#tabs_menu #activetab a {
+	background-position: 0 -33px;
+}
+
+#tabs_menu #activetab a span {
+	background: url(http://illiweb.com/fa/admin/icones/menu/sub_right1.png) no-repeat 100% -33px;
+	color:#7cba2c;
+}
+
+#tabs_menu #activetab a:hover span {
+	color: #00a5cd;
+}
+
+#menu-body {
+	padding: 0px;
+	margin: -1px;
+}
+* html #menu-body {
+	margin: -2px;
+}
+
+#menu-body:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Hide from Mac IE, Windows IE uses this as it doesn't support the :after method above \*/
+#menu-body {
+	height: 1%;
+}
+
+.panel_menu {
+	margin: 0px;
+	background-color: #fff;
+	border: 1px solid #CDCDCD;
+	padding: 0 0 10px 0;
+}
+
+/* rajout si image trop grande en mode simple */
+.panel_menu_simple {
+	margin: 0px;
+	background-color: #fff;
+	border: 1px solid #CDCDCD;
+	padding: 0 0 10px 0;
+	overflow-x:auto;
+	width:100%;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+#draggable_preview {
+	position:absolute;
+	z-index:100;
+	top:450px;
+	margin-left:35%;
+}
+* html #draggable_preview {
+	margin-left:50%;
+}
+
+
+/* List of themes */
+ul#theme_list {
+	list-style-type:none;
+	margin:0pt 1em;
+	padding:0pt !important;
+}
+
+ul#theme_list li {
+	float:left;
+	background-color:#fff;
+	border:1px solid #ccc;
+	font-size:0.8em;
+	margin:5px;
+	padding:8px 3px;
+	text-align:center;
+}
+
+ul#theme_list li:hover {
+	background-color:#cdcdcd;
+}
+
+ul#theme_list li.hitskin {
+	width:160px;
+}
+
+ul#theme_list li.others {
+	width:240px;
+}
+
+ul#theme_list li.theme_selected {
+	background-color:#00a5cd;
+	border-color:#cdcdcd;
+	color:#fff;
+}
+
+ul#theme_list li.theme_selected a{
+	color:#fff;
+}
+
+ul#theme_list img {
+	border:1px solid #7cba2c;
+	display:block;
+	/*margin:0pt auto;*/
+}
+
+ul#theme_list li.histskin img{
+	width:140px;
+	height:105px;
+}
+
+ul#theme_list li.others img{
+	width:220px;
+	height:95px;
+}
+
+.inline{
+	display: table;
+	margin: 0 auto;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.inline del {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.finline{
+	float:left;
+	margin:1em;
+}
+
+.border-separe{
+	border-right:solid 1px #8FD534;
+}
+
+/*
+	Notebook
+*/
+.notepad {
+	width: 265px;
+	margin: 0 auto 15px;
+}
+
+.notepad-content .notepad-box {
+	position: relative;
+	width: 265px;
+	height: 300px;
+	/*background: url(http://illiweb.com/fa/admin/notepad-blue.png) no-repeat top left;*/
+}
+
+.notepad-content #notepad {
+	position: absolute;
+	top: 58px;
+	left: 22px;
+	width: 211px;
+	height: 218px;
+	border: none;
+	background: transparent;
+	overflow: auto;
+	border: 1px dotted transparent;
+}
+
+.notepad-content #notepad:hover {
+	border: 1px dotted #309bfb;
+}
+
+.notepad-pa .open-close {}
+
+.notepad-close,
+.notepad-open {
+	display: block;
+	float: right;
+	height: 28px;
+	margin: -15px -8px 0 0;
+	padding: 0 25px 0 0;
+	background: url(http://illiweb.com/fa/admin/notepad-blue-close-22x25.gif) no-repeat top right;
+	border: none;
+}
+.notepad-open {
+	background: url(http://illiweb.com/fa/admin/notepad-blue-22x25.gif) no-repeat top right;
+}
+
+* html .notepad-close,
+* html .notepad-open {
+	margin: 0 !important;
+	cursor: hand;
+}
+
+.notepad-close:hover,
+.notepad-open:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+*+ html .notepad-close:hover,
+*+ html .notepad-open:hover {
+	cursor: hand;
+}
+
+* html .notepad-close:hover,
+* html .notepad-open:hover {
+	cursor: hand;
+}
+
+/* Spend credits | Domain */
+
+.domain-name a.icon_ok,
+.domain-name a.icon_cancel {
+	margin-left: 10px !important;
+	padding-left: 20px;
+}
+
+.domain-name a.icon_ok:hover,
+.domain-name a.icon_cancel:hover {
+	text-decoration: none;
+}
+
+.domain-term,
+.url-ext {
+	float: left;
+}
+
+.domain-url {
+	/*width: 40em;*/
+	float: left;
+}
+
+*+ html .domain-url {
+	/*width: 35em;*/
+}
+
+* html .domain-url {
+	/*width: 35em;*/
+}
+
+.hostname {
+	float:left;
+}
+
+.url-ext input {
+	margin: 0 0.25em 0 0.5em
+}
+
+.invisible{display:none;visibility:hidden;}
+.visible{display:block;visibility:visible;}
+
+/* Plugin Profile */
+.profile_submit_error{border-color:#dd2c2c;color:#dd2c2c;background-image:url(http://illiweb.com/fa/admin/icon_no_ok.gif)}
+.profile_submit_error:hover{border-color:#dd2c2c}
+.profile_cell_background0{background:#fff}
+.profile_cell_background1{background:#f9f9f9}
+.profile_cell_highlight{background:#cee3b1}
+.profile_form_true{background:#f1f6ed;}
+.profile_form_false{background:#f6eded;border:1px dotted #c00;border-left:4px solid #c00}
+
+ul.profile_field_list {padding:0}
+
+ul.profile_field_list > li {list-style-type: none}
+
+.inputURL {font-size:10px;font-family:"Courier New", "Times New roman";letter-spacing:-1px}
+
+.colorpicker_add_input{cursor:pointer;border:1px solid #000;text-decoration:none;margin-right:2px;background:url(http://illiweb.com/fa/i/bgcolor.png) no-repeat scroll 100% 100%;height:16px;width:32px}
+
+/* jqModal */
+.jqmWindow {
+	display: none;
+	position: fixed;
+	left: 50%;
+	width: 450px;
+	margin-left: -225px;
+	top: 50%;
+	margin-top: -125px;
+	background-color: #fff;
+	border: 1px solid #444; /*#cdcdcd*/
+}
+
+.jqmOverlay {
+	background-color: #555; /*#cdcdcd*/
+}
+
+.jqDrag {
+	cursor: move;
+}
+
+.jqmWindowAnnu {
+	display:none;
+	left:50%;
+	width:98%;
+	margin-left:-49%;
+	top:40%;
+	margin-top:-142px;
+}
+
+.navbar-preview li {
+	display:inline;
+}
+
+/* Invite friends */
+.invite_service {
+ 	float: left;
+ 	margin: 5px;
+ 	cursor: pointer;
+}
+
+.invite_service img {
+	width: 108px;
+	height: 60px;
+}
+
+.invite_email {
+ 	float: left;
+ 	width: 50%;
+}
+
+#invite_jqm {
+	font-size: 0.8em;
+}
+
+#invite_jqm fieldset {
+	margin: 0 12px 12px;
+}
+
+#invite_jqm legend img {
+	float: left;
+	margin-top: 11px;
+	border: 1px solid #CDCDCD;
+	background: #FFF;
+}
+
+#invite_jqm .invite_error {
+	float: right;
+	margin-top: 24px;
+	margin-left: 7px;
+	padding: 7px;
+	background: #F6EDED;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #C00;
+	border: 1px solid #C00;
+	display: none;
+}
+
+#invite_jqm dt {
+	width: 40%;
+}
+
+#invite_jqm .invite_contacts {
+	height: 200px;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#invite_jqm .invite_contacts_col {
+	width: 10%;
+	text-align: center;
+}
+
+#invite_jqm .contact {
+	cursor: pointer;
+}
+
+#invite_jqm .row1:hover, #invite_jqm .row2:hover {
+	background-color: #D1D7DC;
+	cursor: pointer;
+}
+
+#invite_jqm .invite_wait {
+	text-align: center;
+}
+
+#invite_jqm .invite_wait h1 {
+	color: #00A5CD;
+}
+
+#invite_jqm .invite_msg {
+	text-align: center;
+}
+
+#invite_jqm .invite_msg h1 {
+	font-weight: normal;
+}
+
+#invite_get {
+	display: none;
+	width: 476px;
+	height: 229px;
+}
+
+#invite_send {
+	display: none;
+	width: 600px;
+	height: 408px;
+}
+
+#invite_wait {
+	display: none;
+	width: 300px;
+	height: 181px;
+}
+
+#invite_msg {
+	display: none;
+	width: 470px;
+	height: 196px;
+}
+
+#search_sort {
+	font-size: 1em;
+}
+
+th.headerSort {
+    cursor: pointer;
+}
+
+* html #invite_jqm fieldset {margin-top: 9px;top: 30px;}
+*+html #invite_jqm fieldset {margin-top: 8px;top: 30px;}
+
+* html #invite_jqm legend {margin-top: -30px;}
+*+html #invite_jqm legend {margin-top: -30px;}
+
+*+html #invite_jqm span.invite_error {margin-right: 30px!important;}
+
+* html #invite_jqm dl.invite_get_first_dl {padding-top: 35px;}
+*+html #invite_jqm dl.invite_get_first_dl {padding-top: 35px;}
+
+* html #invite_jqm tbody tr {height: 1em;}
+*+html #invite_jqm tbody tr {height: 1em;}
+
+/* Slider */
+.defaultbar
+{
+	height: 5px;
+	top:10px;
+    background-color: #FFFFE0;
+    border: 1px solid #CDCDCD;
+    position: relative;
+	}
+.defaultbar .jquery-completed
+{
+	height: 5px;
+    background-color: #7CBA2C;
+    position: absolute;
+}
+.defaultbar .jquery-jslider
+{
+	height: 15px;
+    background-color:#00A5CD;
+	border:1px solid #888888;
+    top: -6px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+	}
+.defaultbar .jquery-jslider-hover
+{
+	background-color: #CDCDCD;
+	border: 1px solid #888888;
+}
+.slidercontainer
+{
+	margin:-5px 0 0;
+	height: 28px;
+	/*text-align: center;*/
+}
+#stockage_container .defaultbar .jquery-jslider, #slidercontainer2 .defaultbar .jquery-jslider, #slidercontainer3 .defaultbar .jquery-jslider {
+	display: none;
+}
+#slidercontainer2 .defaultbar .slidercontainer, #slidercontainer3 .defaultbar .slidercontainer
+{
+	margin:-5px 0 0;
+}
+.join_file_slider dt
+{
+	float:left;
+	clear:left;
+	border:medium none;
+	width:30%;
+}
+.join_file_slider dd
+{
+	padding-bottom:4px;
+	/*height:25px;*/
+	margin-left:0px;
+	float: left;
+	padding-left:0px;
+	padding-top:5px !important;
+	vertical-align:middle;
+	width: 70%
+}
+.join_file_slider label
+{
+    display:block;
+    margin-right:0.2em;
+    font-weight:bold;
+    color:#5c5c5c;
+}
+
+.join_file_slider dd .legend, .join_file_slider dd .content
+{
+    display: inline-block;
+}
+
+.join_file_slider dd.tiers .legend
+{
+	width: 20%;
+}
+.join_file_slider dd.semi .legend
+{
+	width: 40%;
+}
+.join_file_slider dd .content
+{
+	width: 60%;
+	height: 6px;
+}
+.join_file_slider dd .content .innercontent
+{
+	padding: 0 5px;
+}
+.ui-slider-disabled .ui-slider-handle {
+	visibility: hidden;
+}
+
+#cont_pwd {
+	width:150px;
+	height:21px;
+	float:left;
+	padding:0 0 0 20px;
+}
+.pwd_img {
+	padding : 4px 0 3px 0;
+	width : 150px;
+	height : 14px;
+	line-height : 14px;
+	font-size : 11px;
+	font-weight : bold;
+	text-align : center;
+	color : #000000;
+	display : none;
+}
+#pwd_good {
+	background:url('http://illiweb.com/fa/p_strength/pwd_good.png');
+}
+#pwd_middle {
+	background:url('http://illiweb.com/fa/p_strength/pwd_middle.png');
+}
+#pwd_bad {
+	background:url('http://illiweb.com/fa/p_strength/pwd_bad.png');
+}
+
+/* PA : code JS */
+#listJs th.headerSort span.imgSort{
+	background:none;
+}
+#listJs th.headerSortUp span.imgSort{
+	background:url("http://illiweb.lan/fa/down_arrow.gif") no-repeat scroll 4px 3px transparent;
+	display:inline-block;
+	width:13px;
+}
+#listJs th.headerSortDown span.imgSort{
+	background:url("http://illiweb.lan/fa/up_arrow.gif") no-repeat scroll 4px 3px transparent;
+	display:inline-block;
+	width:13px;
+}
+div.CodeMirror .searched{
+	background:yellow;
+}

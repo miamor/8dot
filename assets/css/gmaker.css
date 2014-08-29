@@ -1,0 +1,37 @@
+body{overflow:hidden}
+.gmaker-wrapper{position:absolute;left:0;right:0;top:0;height:80%;width:100%}
+.gmaker-wrapper, .gmaker-wrapper div, .gmaker-wrapper a, .gmaker-wrapper b, .gmaker-wrapper span{*font-size:10px}
+.container-fluid{padding:0;margin:0}
+.gmaker-right-sidebar-corner{position:absolute;right:0;top:0;bottom:0;width:80px;background:#fff;z-index:990}
+.gmaker-right-sidebar{position:absolute;z-index:991;right:0;top:0;bottom:0;width:250px;right:80px;background:#fff;border:1px solid #f3f3f3;border-radius:0 6px 6px 0}
+.gmaker-right-sidebar:after{content:'';z-index:992;position:absolute;background:#fff;border:1px solid #f3f3f3;width:15px;height:15px;top:30px;right:-9px;transform:rotate(45deg);-webkit-transform:rotate(45deg);border-bottom:0;border-left:0}
+.gmaker-main{position:absolute;top:40px;height:calc(100% - 100px);height:-webkit-calc(100% - 100px);*height:100%;left:0;right:330px;background:#f6f6f4;overflow:auto}
+.gmaker-main-tab{border-bottom:1px solid #eee;height:40px}
+.gmaker-main-tab div{float:left;cursor:pointer;padding:8px 15px;margin-top:-1px;position:relative}
+.gmaker-main-tab div img{margin:-2px 2px 0 0}
+.gmaker-main-tab .active:after{content:'';z-index:992;position:absolute;background:#fff;border:1px solid #f0f0f0;width:15px;height:15px;top:33px;left:40%;transform:rotate(45deg);-webkit-transform:rotate(45deg);border-top:0;border-left:0}
+.gmaker-main-tab .active{background:#fff;border:1px solid #f0f0f0;font-weight:700;font-size:13px;padding:6px 15px 10px}
+.gmaker-canvas{background:#fff;border:1px solid #ededed;width:70%;height:52%;margin:9% 15%;box-shadow:0 5px 5px -5px #ccc}
+.gmaker-board{position:absolute;margin:60px 0 0 60px;height:400px;width:60%;background:#fff;border:1px solid #eee;box-shadow:1px 2px 4px #ddd;z-index:1002}
+.gmaker-board-fixed{z-index:1000;position:fixed;top:60px;bottom:0;left:255px;right:0;background:rgba(255,255,255,.7)}
+.gmaker-board h2{border-bottom:1px solid #f3f3f3;padding:8px 15px;height:40px;background:#fafafa;margin-top:0px}
+.gmaker-board .content{overflow:auto;padding:5px 10px}
+.gmaker-board .right-menu{border-left:1px solid #f3f3f3;height:calc(100% - 40px);height:-webkit-calc(100% - 40px);margin:-5px 0 0;*padding:5px 10px;width:200px;overflow-y:auto;overflow-x:hidden}
+.gmaker-board-close{float:right;cursor:pointer}
+.gmaker-canvas div:not(.empty-canvas){position:absolute;z-index:10;cursor:pointer}
+.empty-canvas{position:absolute;z-index:1;width:100%;height:100%;cursor:crosshair}
+.empty-canvas:after{content:'Double click me...';position:absolute;top:46%;left:38%;font-size:15px;opacity:.6}
+.canvas-element{border:1px dashed #e7e7e7;padding:5px!important}
+.canvas-element-menu{z-index:999999999;position: absolute;background-color:#fff;border:1px solid #f0f0f0;border-top-color:#efefef;width:150px;box-shadow:0 2px 3px 0 #f6f5f5;display:none}
+.canvas-element-menu div{padding:0 5px;cursor:pointer}
+.canvas-element-menu div:hover{background:#37bc9b;color:#fff}
+.ui-resizable-handle{position:absolute;bottom:0;right:0}
+.gmaker-canvas .ui-resizable-se{float:right;right:0;bottom:0px}
+.gmaker-event-sheets{background:#fff;border:1px solid #ededed;position:relative;margin:-1px 50px 20px;padding:10px 20px}
+.evt{border:1px solid #eee;border-left-width:3px;padding:2px 10px;position:relative}
+.evt:hover{border-color:#ddd;z-index:10}
+.evt-condition{float:left;width:30%}
+.evt-action{float:left;width:70%;margin-left:-1px}
+.gmaker-board .add-to-canvas{display:inherit;padding:7px}
+.gmaker-board .add-to-canvas:hover{background:#f7f7f5}
+.gmaker-board .add-to-canvas img{width:30px;height:30px}

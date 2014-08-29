@@ -1,0 +1,107 @@
+* { margin: 0; padding: 0; line-height:24px}
+*:not(a) {color: #696969}
+
+html{height:100%;font-size: 100%;}
+body {font-family: Trebuchet MS,"Lucida Grande",Verdana,Helvetica,Arial,sans-serif;background-color:#fff;font-size:12px;min-width:750px;background:#333}
+a{text-decoration:none;color:#007e9b}
+a:hover{color:#cc4400}
+a img{border: none;}
+
+img{border: 0;}
+
+img { behavior: url(iepngfix.htc); }
+
+h1{font-weight:700;font-size: 1.5em;color: #333;}
+
+
+.likeh2 {
+	font-size: 1.8em;
+	margin: 0px 0px 5px 15px;
+	color: #00a5cd;
+	padding: 10px 0 0 30px;
+	height: 40px;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 0px 0px 5px 15px;
+	color: #00a5cd;
+	padding: 10px 0 0 30px;
+	background: url(http://illiweb.com/fa/admin/puce.png) no-repeat;
+	height: 40px;
+}
+h2 a{color: #00a5cd !important;}
+h2 a:hover{color:#6ca226 !important;text-decoration:none;border-bottom:1px solid #6ca226;}
+
+
+/*#page-header {height: 100px;*background: #000;position:relative;border-radius:5px 5px 0 0}
+#wrapper{margin:0 6%;*box-shadow:1px 1px 2px rgba(180,180,180,.2);background:rgba(255,255,255,.4);border:10px solid rgba(255,255,255,.3);border-radius:5px;box-shadow: 0 5px 5px -5px #ccc}
+#page-content{border:1px solid #f3f3f3;background:#fff;border-radius:5px}
+#page-body{padding:10px;position:relative}
+#tabs{list-style:none;position:absolute;top:0;left:0;right:0;width:100%;margin:0 -8%;padding: 0 8%;*background:rgba(255,255,255,.6);height:55px;margin-top:-46px}
+#tabs ul li{display:inline-block;margin: 0 6px;height:25px!important;}
+#tabs ul li a{padding:6px;height:30px!important;line-height:30px!important;border-radius:4px 4px 0 0}
+#tabs ul li.active{border:10px solid rgba(255,255,255,.6);border-radius:3px 3px 0 0;border-bottom:0}
+#tabs ul li.active a{background:#fff;border:1px solid #f3f3f3;border-bottom:0;padding:8px 15px 12px}
+*/
+
+#page-header{background:#2a2a2a;height: 150px;position:relative}
+#page-content{border:1px solid #f3f3f3;background:#fff;*margin:1px 10px}
+#page-body{padding:10px;position:relative}
+#tabs{list-style:none;position:absolute;bottom:0;left:0;right:0;width:100%}
+#tabs ul{background:#222;*margin:-1px;padding:10px 5px 10px}
+#tabs ul li{display:inline-block;margin: 0 6px;}
+#tabs ul li a{padding:13px;color:#efefef}
+#tabs ul li.active a{border-bottom:4px solid #007e9b;padding-bottom:9px;font-weight:700;color:#fff}
+#left-content{float:left;width:260px}
+#main-content{margin-left:280px}
+
+
+.box{border:2px solid #f2f2f2;border-top:0;box-shadow: 0 5px 5px -5px #eee}
+.box-head{background:#f2f2f2;padding:7px}
+.box-content{background:#fff;padding:7px;position:relative}
+
+
+/**
+-------------------------------------------
+ALERT
+-------------------------------------------
+**/
+.alert .close, .alerts .close{color:#000;filter:alpha(opacity=20);float:right;font-size:13px;font-weight:700;line-height:18px;opacity:.2;position:relative;right:-21px;text-shadow:0 1px 0 #fff;top:-2px}
+.alert .close:hover, .alerts .close:hover{color:#000;cursor:pointer;filter:alpha(opacity=40);opacity:.4;text-decoration:none}
+.alert,.alerts{background:#fff;border:1px solid #f8f8f8;/*border-radius:4px;*/margin:20px 30px 10px;text-shadow:0 1px 0 rgba(255,255,255,0.5);padding:10px 35px 10px 30px;border-radius:4px;position:relative;*box-shadow: 0 5px 5px -5px #f8f8f8}
+.alert{position:fixed;z-index:9999999;border-color:#f3f3f3;box-shadow:0;bottom:0;right:0;opacity:1}
+.alert:hover{opacity:1}
+.alert:before, .alerts:before{font-family:'FontAwesome';content:"";position:absolute;left: -15px;top: -15px;width: 35px;height: 35px;border-radius: 50%;line-height: 35px;text-align: center;background: inherit;border: inherit;border-color:#f8f8f8;background-repeat:no-repeat;background-position:center center;background-size:16px 16px}
+
+.alert-danger, .alert-error, .alert-danger:before, .alert-error:before{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.alert-info, .alert-tip, .alert-info:before, .alert-tip:before{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}
+.alert-success, .alert-success:before{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}
+.alert-warning, .alert-warning:before{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
+/*.alert-suggest, .alert-suggest:before{background-color:#fdffe5;color:#bab109;border-color:#f6fac8}
+*/.alert-suggest, .alert-suggest:before{background-color:#e9cdfa;color:#b94a48;border-color:#e0baf5}
+.alert-help, .alert-help:before{background-color:#dcf2f5;color:#2a8752;border-color:#d1e8eb}
+.alert-classic, .alert-classic:before{background-color:#eef;color:#3a87ad;border-color:#e4e4f7}
+.alert-block, .alert-important, .alert-block:before, .alert-important:before{background-color:#fcf8e3;color:#c09853;border-color:#FBEED5}
+/* alert with icon */
+.alert-classic:before{background-image:url('../img/note.png')}
+.alert-tip:before{background-image:url('../img/tip.png')}
+.alert-warning:before{background-image:url('../img/famfamfam/silk/error.png')}
+.alert-help:before{background-image:url('../img/famfamfam/silk/help.png')}
+.alert-block:before, .alert-important:before{background-image:url('../img/important.png')}
+.alert-info:before{background-image:url('../img/famfamfam/silk/information.png')}
+.alert-success:before{background-image:url('../img/famfamfam/silk/accept.png')}
+.alert-error:before{background-image:url('../img/famfamfam/silk/exclamation.png')}
+/*.alert-suggest:before{background-image:url('../img/famfamfam/silk/lightbulb.png')}
+*/.alert-suggest:before{background-image:url('../img/knob_h.png')}
+.alerts{display:block!important}
+/* alert_tip */
+.alert_tip{background:#2d2d2d;opacity:.9;color:#fff;border:1px solid #111;position:fixed;bottom:10px;right:10px;max-width:200px;padding:5px 10px;border-radius:5px;z-index:9999;box-shadow:0 1px 0 #fff}
+.alert_tip:hover{opacity:1}
+/* Console */
+.console{font-family:Courier New;padding-left:22px}
+.console.success{color:#468847}
+.console.error{color:#b94a48}
+.console:before{content:'';position:absolute;width:16px;height:16px;margin:3px 0 0 -23px;background-repeat:no-repeat;background-position:center center}
+.console.success:before{background-image:url(../img/success.png)}
+.console.error:before{background-image:url(../img/error.png)}

@@ -1,0 +1,77 @@
+	/* New course-------------- */
+.next-step{position:absolute;right:30px;margin-top:-8px!important;z-index:3}
+.step-2 .next-step, .step-3 .next-step{margin-top:-12px!important}
+.complete-bar{position: relative;height:8px;background:#ededed;width:100%;margin:50px 0 20px}
+.complete-bar-color{height:8px;position:absolute;width:0;background:#1ad9c0;float:left}
+.step-bar, .step-bar-color{height:8px;position: relative;float:left}
+.step-bar-color{*background:#1ad9c0;}
+.step-bar .begin-point{position: absolute;left:0;content:'';background:#ededed;width:18px;height:18px;border-radius:100%;margin:-5px}
+.step-bar.completed .begin-point{cursor:pointer}
+.complete-point{position: absolute;right:0;content:'';background:#ededed;width:18px;height:18px;border-radius:100%;margin:-5px 0 0 0;z-index:2}
+.step-des, .complete-des{position: absolute;border:1px solid #ededed;border-bottom-color:#eee;border-radius:4px;padding:4px 10px;background:#fff;margin-top:-36px;display:none;z-index:0}
+.completed-form .complete-des{right:0;display:block}
+.step-1-bar .step-des{margin-left:2px!important}
+.step-bar.ongoing  .step-des{display:block;transition:2s}
+.step-bar.completed .begin-point, .step-bar.ongoing .begin-point, form.completed-form .complete-point, .step-bar.completed .step-des{background:#1ad9c0}
+.step .next-step{margin-top:-5px;cursor:pointer;position: absolute}
+.c-info{position: relative;height:100%}
+.c-topic-list{height:80%;overflow:auto;position:absolute;width:200px;*border-right:1px solid #1ad9c0;padding:5px 10px 0 0;margin-top:28px}
+.c-topic-list label .icons, .c-topic-list label{margin-left:0!important}
+.c-topic-list.invalid{border:1px solid #f5918b}
+.divide-c-green{margin-left:205px;width:1px;background: #f3f3f3 /*#1ad9c0*/;height:89%;position:absolute;margin-top:32px}
+.c-topic{*display:inline;margin-right:10px}
+.c-basic-info{width:75%;margin:0 0 0 220px}
+.choose-type{position:relative;border:1px solid #f7f7f7;background:#fbfbfb;box-shadow:0 1px 2px rgba(250,250,250,.6);padding:1% 2%;margin:1% 1%;width:48%;float:left;height:140px;cursor:pointer}
+.type-ex{width:31%}
+.choose-type.selected{background:#fff;border-color:#f8f8f8}
+.choose-type h3{margin-bottom:13px!important}
+.choose-type .ex-num-div{position: absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,.9);text-align:center;padding:10px 0;display:none}
+.choose-type .ex-num-div span{float:left;margin:5px 0 0 10px}
+.c-settings dl.line dd .radio{width:49%;float:left;margin:2px 0 5px 0!important;text-align:left}
+.c-settings dl.line dd .radio .icons span{margin-top:4px!important}
+.c-settings input{width:100%}
+.line.there-col dd{width:70%}
+.line.there-col dd .radio{width:33%!important}
+.line.privacy dd .radio{width:20%!important}
+.line.privacy dd .radio .icons span{margin-top:-1px!important}
+.line.privacy dd .radio span.fa{font-size:20px!important;margin:2px 0 0 3px!important}
+/*.c-settings dl.line dd .radio:first-child:after{content:' ';position: absolute;display: block;width:100%;height:1px;clear:both!important}
+*/.c-settings dt{width:28%} .c-settings dd{width:67%;margin:0 0 -5px 29%!important}
+.time-course input{width:15%}
+.time-course select, .time-course .select{width:20%!important;margin-top:8px}
+.time-course .dropdown-toggle, .time-course .dropdown-menu{width:100%!important}
+.c-settings{width:54%} 
+.new-item-thumbs{width:45%;position: relative;*text-align:center}
+.new-item-thumbs .all-thumbnais{position:relative;margin:5px 0 0!important}
+.new-item-thumbs:not(.g-thumbs) .all-thumbnais{height:100%}
+.new-item-thumbs:not(.g-thumbs) .thums{height:calc(100% - 88px);overflow:auto;text-align:left;margin-top:28px;padding-top:5px!important}
+.new-item-thumbs .thums:before{content:'More thumbnais';border-bottom:1px solid #f3f3f3;width:95%;position:absolute;margin:-28px 0 -4px -4px;padding:0 10px;background:#fff}
+.g-thumbs .thums{margin-top:28px;padding-top:5px!important}
+.g-thumbs .thums:before{margin:-28px 0 14px -1px!important}
+.edit-item-thumbs{bottom:8px}
+.new-item-thumbs .all-thumbnais > input{width:88%!important}
+.new-item-thumbs .all-thumbnais .thums > input{width:48.5%;margin-top:7px}
+.new-item-thumbs .all-thumbnais .thums > input:nth-child(2n){float:right}
+.for-interact{*border-top:1px solid #f3f3f3;*margin-top:15px;padding-top:10px}
+
+.test-choice dd input{width:19%;padding-right:4%!important;margin:1% 1% 1% 0}
+.test-choice dt{margin-top:10px!important}
+.choose-correct-ans{position: absolute;width:2%;margin:17px 0 0 -4.5%;text-align:center;cursor:pointer;font-size:15px;color:#aaa}
+.input-success{border-color:#8CC152!important}
+.input-success + div{color:#8CC152}
+
+	/* Lesson new------------ */
+.l-basic-info{width:68%} .l-settings{width:30%}
+.l-settings dt{width:30%!important} .l-settings dd{width:69%!important}
+.big-cont dt{width:10%} .big-cont dd{width:87%;margin-left:12%}
+.ex-choose-sample-type label{margin-right:10%}
+
+	/* Add exercise---------- */
+.row-addexercise{width:70%}
+.addex-action{*text-align:right;*width:18%} .addex-action > div{margin:5px;display:inherit;width:140px!important}
+/*.row-addexercise:nth-child(3n+2), .row-addexercise:nth-child(3n+2):before, .row-addexercise:nth-child(3n+2) .count-star, .row-addexercise:nth-child(3n+2) .lib-sta div{background:#fff!important}
+.row-addexercise:nth-child(3n+1), .row-addexercise:nth-child(3n+1):before, .row-addexercise:nth-child(3n+1) .count-star, .row-addexercise:nth-child(3n+1) .lib-sta div{background:#fbfbfb!important}
+*/.one-row:nth-child(2n + 1) .row-lib, .one-row:nth-child(2n + 1) .row-lib:before, .one-row:nth-child(2n + 1) .count-star, .one-row:nth-child(2n + 1) .lib-sta div{background:#fff}
+.one-row:nth-child(2n) .row-lib, .one-row:nth-child(2n) .row-lib:before, .one-row:nth-child(2n) .count-star, .one-row:nth-child(2n) .lib-sta div{background:#fbfbfb}
+.public-action{padding-top:8px}
+.public-action div{font-size:22px;margin-left:7px}

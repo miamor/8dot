@@ -1,0 +1,11 @@
+// Add your results code here. See examples below.
+// Use @["quest num" - "Result"] for one question result code. (Space is required)
+// Add 'ans' after @ for answer requiring. Eg @ans[1 - 30] with 30 is the final result.
+// 2 result code doesn't need to be seperated.
+
+@[1 - B] @[2 - A]@[3 - C]	@[4 - A]
+@ans[5 - 50]
+@[6 - E] // You can add comments here by using '//'
+@[7 - "Words with space"]
+@ans[8 - "\sqrt{2}"] // Final result can be telex code
+@ans[9 - \sqrt{2}] // " is not necessary if there's no space

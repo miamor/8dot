@@ -1,0 +1,22 @@
+	/* Login------- */
+.front-bg{position:absolute;top:0;bottom:0;left:0;right:0;
+-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);}
+.front-side{position:absolute;width:345px;top:0;bottom:0;right:0;padding:30px 21px 0 0;vertical-align:center;*background:rgba(255, 255, 255, .3)}
+.front-signup form{margin-top:10px}
+.front-copyright a{color:#777;margin-left:4px}
+.front-copyright:hover .c-info a{color:#333}
+.front-copyright a:hover{text-decoration:underline}
+.front-copyright .copyright .developer a{font-size:10px}
+.front-login,.front-signup,.front-copyright{margin:20px;padding:10px 10px 0;*position:absolute;width:300px;border:1px solid #f3f3f3;border-radius:3px;background:#fff}
+.front-signup h2, .front-signin h2{margin:0;padding-top:0!important;border-bottom:1px solid #f6f6f6;-webkit-box-shadow:0 1px 0 #fff;box-shadow:0 1px 0 #fff;color:#777;display:block;font-size:16px;font-weight:300;margin-bottom:12px;padding:10px 12px;position:relative;text-shadow:0 1px 0 rgba(255,255,255,0.6)}
+.welcome_text{position:absolute;top:7%;width:calc(100% - 325px - 40px - 60px);left:60px;font-weight:600}
+.welcome_text .alerts{font-size:11px;margin:-5px 50px 5px -30px}
+.welcome_text h1{font-size:34px;margin-top:150px}
+.welcome_text p{margin-top:35px;font-size:22px;line-height:31px;color:#555;*font-family:'Rationale'}
+.welcome_text div:not(.alerts){font-size:15px;line-height:32px;color:#aaa;*font-family:'Open Sans'}
+
+

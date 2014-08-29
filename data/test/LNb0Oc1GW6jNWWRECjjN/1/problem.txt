@@ -1,0 +1,1 @@
+Output min and max of 4 input numbers.

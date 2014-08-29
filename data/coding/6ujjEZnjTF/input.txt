@@ -1,0 +1,22 @@
+Uses crt;
+Var
+	tep2: TEXT; // define 
+	A: array[1 .. 100] of Integer; // define A as an array of intergers.
+	i,n:integer; // define i and n type
+Begin
+	Clrscr;
+	ASIGN(tep2, 'C:\DULIEU.TXT'); // name the file
+	REWRITE(tep2); // open the file
+
+	n:=100; // Set n value
+	
+	For i:=1 to n do
+		Begin
+			Write('Input number',i);
+			Readln(A[i]);
+			Write(tep2, A[i]);
+		End;
+
+	Close(tep2);
+	Readln;
+End.
